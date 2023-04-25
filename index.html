@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EXO DOM</title>
+</head>
+<body>
+    <div class="container flex">
+        <div class="structure">
+          <h1>Panier</h1>
+      
+          <table border="2" id="table">
+            <thead>
+              <tr>
+                <th>SACOCHE</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+                <th>Sous-total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="all_products">
+              <tr> 
+                <td class="article--name"><div style="margin-right:1rem"><img src="https://iconprincess.com/wp-content/uploads/2021/07/louis-vuitton-sac-capucines-1920x1920.jpg" height="200PX" width="200PX"></div></td>
+                <td class="quantity"> 
+                  <button class="qty-minus" id="1">-</button>
+                  <input type="text" readonly placeholder="Unit price"  class="qty" value="1" >
+                  <button class="qty-plus" id="1">+</button>
+                </td>
+                <td class="price"> 15000 fr</td> 
+                <td class="subtotal">15000 fr</td>
+                <td><button class="like-btn">J'aime</button></td>
+              </tr>
+              <tr> 
+                <td class="article--name1"><div style="margin-right:1rem"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSlvW2vi6Ekxl9UwNsxIn4qQNA61TG_KSgw&usqp=CAU" height="200PX" width="200PX"></div></td>
+                <td class="quantity1"> 
+                  <button class="qty-minus1" id="1">-</button>
+                  <input type="text" readonly placeholder="Unit price"  class="qty" value="1" >
+                  <button class="qty-plus" id="1">+</button>
+                </td>
+                <td class="price"> 50000 fr</td> 
+                <td class="subtotal">50000 fr</td>
+                <td><button class="like-btn">J'aime</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><button type="button" id="add_button">Ajouter un article</button></td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div>
+            <button type="button" id="supprimer_button">supprimer les articles</button>
+            <h2>Total : <span id="total_display">0 fr cfa</span></h2>
+          </div>
+
+        </div>
+      </div>
+        
+      <script src="js/dom.js"></script>   
+</body>
+</html>
